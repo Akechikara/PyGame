@@ -1,0 +1,32 @@
+import turtle
+tao = turtle.Pen()
+tao.shape('turtle')
+tao.speed(20)
+
+
+def walk(x,y):
+    tao.penup()
+    tao.goto(x,y)
+    tao.pendown()
+    
+
+tao.color('red', 'yellow')
+tao.begin_fill()
+
+for i in range(6):
+    tao.left(60)
+    tao.circle(100)
+
+tao.end_fill()
+
+tao.color('blue','pink')
+tao.begin_fill()
+
+walk(200,200)
+
+for i in range(5):
+    tao.forward(80)
+    tao.left(144)
+
+tao.end_fill()
+
